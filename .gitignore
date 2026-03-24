@@ -1,0 +1,10 @@
+/_build/
+/deps/
+*/_build/
+*/deps/
+*/*/_build/
+*/*/deps/
+*.beam
+*.ez
+.elixir_ls/
+.omc/

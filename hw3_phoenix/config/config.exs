@@ -8,6 +8,7 @@
 import Config
 
 config :hw3_phoenix,
+  ecto_repos: [Hw3Phoenix.Repo],
   generators: [timestamp_type: :utc_datetime]
 
 # Configure the endpoint

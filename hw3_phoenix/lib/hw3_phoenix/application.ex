@@ -9,6 +9,7 @@ defmodule Hw3Phoenix.Application do
   def start(_type, _args) do
     children = [
       Hw3PhoenixWeb.Telemetry,
+      Hw3Phoenix.Repo,
       {DNSCluster, query: Application.get_env(:hw3_phoenix, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: Hw3Phoenix.PubSub},
       # Start a worker by calling: Hw3Phoenix.Worker.start_link(arg)

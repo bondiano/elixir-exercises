@@ -1,5 +1,16 @@
 import Config
 
+# Configure your database
+config :hw3_phoenix, Hw3Phoenix.Repo,
+  username: "postgres",
+  password: "postgres",
+  hostname: "localhost",
+  port: 5434,
+  database: "hw3_phoenix_dev",
+  stacktrace: true,
+  show_sensitive_data_on_connection_error: true,
+  pool_size: 10
+
 # For development, we disable any cache and enable
 # debugging and code reloading.
 #
